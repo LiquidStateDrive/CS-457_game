@@ -1,6 +1,8 @@
+```mermaid
 ---
+config:
+    theme: redux_dark
 title: Game State Diagram
-id: 3f8fbed5-e705-4805-9828-d9b0472a95f6
 ---
 stateDiagram-v2
     [*] --> INIT
@@ -23,3 +25,4 @@ stateDiagram-v2
     WAITING_FOR_RECCONECT --> GAME_OVER : Other Player Disconnects
     GAME_OVER --> CLEANUP : Broadcast Final Results
     CLEANUP --> WAITING_FOR_PLAYER : Reset
+```
