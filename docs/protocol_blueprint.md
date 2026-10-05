@@ -48,7 +48,7 @@ Sent by a client attempting to register with the game server.
 ```json
 {
   "msg_type": "CONNECT",
-  "sender": "client",
+  "sender": "player_1",
   "timestamp": 1728000000.0,
   "payload": {
     "player_name": "Player Name"
@@ -102,9 +102,9 @@ Sent by the active player to propose an action.
   "sender": "player_1",
   "timestamp": 1728000003.0,
   "payload": {
-    "from": "A2",
+    "from": "A4",
     "to": "A1",
-    "eliminated": "B3",
+    "eliminated": "B4",
   }
 }
 ```
@@ -123,7 +123,7 @@ Broadcast by the server following move evaluation to synchronize game state acro
     "player_1_eliminated": 0,
     "player_2_unplaced": 4,
     "player_2_eliminated": 0,
-    "board": 
+    "board": {"A1" :"player 1", "A4":"", "A7":"player 2","B2" :"" ,"B4" :"player 2","B6" :"","C3" :"","C4" :"","C5" :"","D1" :"player 1","D2" :"player 1","D3" :"","D5" :"player 1","D6" :"","D7" :"player 1","E3" :"player 2","E4" :"player 1","E5" :"","F2" :"","F4" :"player 2","F6" :"","G1" :"player 2","G4" : "","G7" :""}
   }
 }
 ```

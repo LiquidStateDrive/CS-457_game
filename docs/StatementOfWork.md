@@ -21,19 +21,20 @@
 - **Player Capacity:** 2 Players (Simulated via 2 CML Client nodes)
 - **Game Summary:** The game is played on a board with 24 points, laid out as follows: 
 ```
-X——————————X——————————X
-|          |          |
-|   X——————X——————X   |
-|   |      |      |   |
-|   |   X——X——X   |   |
-|   |   |     |   |   |
-X———X———X     X———X———X
-|   |   |     |   |   |
-|   |   X——X——X   |   |
-|   |      |      |   |
-|   X——————X——————X   |
-|   |      |      |   |
-X——————————X——————————X
+  1   2   3  4  5   6   7
+A X——————————X——————————X
+  |          |          |
+B |   X——————X——————X   |
+  |   |      |      |   |
+C |   |   X——X——X   |   |
+  |   |   |     |   |   |
+D X———X———X     X———X———X
+  |   |   |     |   |   |
+E |   |   X——X——X   |   |
+  |   |      |      |   |
+F |   X——————X——————X   |
+  |   |      |      |   |
+G X——————————X——————————X
 ```
 Players each have nine pieces, called "Men". They try to place three men in a line, called a "mill", which allows them to remove an opponents man from the board. (A man gets removed when a player forms a mill. Players can repeatedly break and re-form mills to remove more of their opponents men.)
 
