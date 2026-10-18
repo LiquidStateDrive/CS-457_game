@@ -98,8 +98,8 @@ A player when they reduce their opponent to two men, or when they have no legal 
 ## 3. Game Behavior & Server Concurrency Architecture (Sprint 2 Deliverable)
 
 ### 3.1 Server Concurrency Strategy
-- **Architecture Choice:** [Multi-Threading (`threading.Thread`) OR Non-blocking I/O multiplexing (`select.select` / `selectors`)]
-- **Synchronization Logic:** Explain how shared game state and client list are thread-safe (e.g. `threading.Lock`) to prevent race conditions during turn processing.
+- **Architecture Choice:** Non-blocking I/O multiplexing (`select.select` / `selectors`)
+- **Synchronization Logic:** Selectors are inherently thread safe due to using a single threaded event loop. Calls will be handled sequentially in the order defined by the State Machine. The only sensitive part of the networking that must be handled is waiting for `\n` to be recieved before processing messages, because `recv()` will be non-blocking. 
 
 ### 3.2 State & Score Synchronization Across Clients
 - **Turn Enforcement:** Detail how the server validates active player ID before processing moves and broadcasts updated turn notifications to all clients.

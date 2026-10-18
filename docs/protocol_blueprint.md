@@ -104,7 +104,7 @@ Sent by the active player to propose an action.
   "payload": {
     "from": "A4",
     "to": "A1",
-    "eliminated": "B4",
+    "eliminate": "B4"
   }
 }
 ```

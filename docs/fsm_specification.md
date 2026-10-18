@@ -24,5 +24,5 @@ stateDiagram-v2
     WAITING_FOR_RECCONECT --> Normal_Gameplay : Player Reconnects
     WAITING_FOR_RECCONECT --> GAME_OVER : Other Player Disconnects
     GAME_OVER --> CLEANUP : Broadcast Final Results
-    CLEANUP --> WAITING_FOR_PLAYER : Reset
+    CLEANUP --> WAITING_FOR_PLAYERS : Reset
 ```
