@@ -31,7 +31,7 @@ Unless explicitly overridden in `protocol_blueprint.md`, every JSON message acro
 ```
 This should keep the agent focused on implementing my protocol instead of wandering off on its own. 
 
-## 2: 
+## 2: Testing
 
 I plan to use test driven development to make sure the agent's implementation can always be verified. An example of tests for connect messages is at the bottom of the document. 
 
@@ -43,22 +43,6 @@ The agent will always be prompted for a plan before writing any actual code, suc
 ```
 /plan Explain how you will implement the JSON messaging protocol so that it conforms to the schema in protocol_bluepring.md and satisfies the tests in message_tests.py
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Example Unit Test for CONNECT message

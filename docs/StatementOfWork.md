@@ -110,7 +110,12 @@ A player when they reduce their opponent to two men, or when they have no legal 
 ## 4. Coding & AI Implementation Plan (Sprint 3)
 
 - **Permitted AI Tools:** [e.g., GitHub Copilot, ChatGPT, Claude]
-- **AI Prompting & Constraint Strategy:** Explain how you will constrain AI models to generate code (in Python or your chosen language) that adheres strictly to the protocol blueprint and FSM designed in Sprints 1 & 2.
+- **AI Prompting & Constraint Strategy:** 
+My three main techinques for constrining my AI to the blueprints from the first two sprints are:
+- Rules
+- Test driven development
+- Plan review for every step
+Specific details can be found in ai_prompts.md
 - **Implementation Risk Management:** Detail your plan to leverage past programming experience and manage time to ensure code completion on schedule.
 
 ---
